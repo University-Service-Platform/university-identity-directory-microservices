@@ -5,6 +5,8 @@ from app.routes.validation import router as validation_router
 from app.routes.health import router as health_router
 from app.routes.faculties import router as faculties_router
 from app.routes.service_units import router as service_units_router
+from app.routes.departments import router as departments_router
+from app.routes.affiliations import router as affiliations_router
 import app.models  # Ensure all models are registered
 
 # Create database tables
@@ -50,3 +52,7 @@ app.include_router(health_router)
 app.include_router(validation_router)
 app.include_router(faculties_router)
 app.include_router(service_units_router)
+app.include_router(departments_router)
+app.include_router(affiliations_router)
+
+
